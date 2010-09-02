@@ -1,0 +1,8 @@
+<html>
+<body align="center">
+<a href="album_recommender">
+<img src="<%=@release.image%>"></a><br/><br/>
+<audio controls autobuffer>  <source src="<%=@track_preview_url %>" /> </audio><br /><br />
+<a href="<%=@release.url%>" target="_blank">BUY <%= @release.price.formatted_price%></a>
+</body>
+</html>
